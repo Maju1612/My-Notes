@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from './Button'
+import {Prompt} from 'react-router-dom'
 
 const NotePanel = props => {
     return (
@@ -26,11 +27,9 @@ const NotePanel = props => {
                     linkTo="/"
                     click={props.clickAdd}
                 />
-                 <Button
-                    btnClass="cancel icon"
-                    iClass="far fa-window-close"
-                    text=" Anuluj"
-                    linkTo="/"
+          <Prompt
+                    when={props.isEmpty}
+                    message="Pola nie zostały uzupełnione. Czy chcesz porzucić dodawanie nowej notatki?"
                 />
           </div>
         </div>
