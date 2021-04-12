@@ -12,6 +12,7 @@ class App extends React.Component {
     newCategory: "- wybierz kategorię -",
     newText: "",
     isEmpty: true,
+    errorInfo: false,
     id:0,
     notes: []
   }
@@ -27,6 +28,16 @@ class App extends React.Component {
       })
     }
   }
+
+  handleExitNote = () => {
+    this.setState({
+      newText: "",
+      newCategory: "- wybierz kategorię -",
+      isEmpty: true,
+      errorInfo: false
+    })
+  }
+
   handleAddNote = () => {
     if (this.state.newText !== "" && this.state.newCategory !== "- wybierz kategorię -") {
       const notes = this.state.notes;
@@ -39,15 +50,13 @@ class App extends React.Component {
       this.setState({
         notes,
         newText: "",
-        newCategory: "- wybierz kategorię -",
         id,
-        isEmpty: true
+        isEmpty: true,
+        errorInfo: false
       })
     } else {
       this.setState({
-        newText: "",
-        newCategory: "- wybierz kategorię -",
-        isEmpty: true
+        errorInfo: true
       })
     }
   }
@@ -86,7 +95,7 @@ class App extends React.Component {
           <Notes notes={this.state.notes} clickDelete={this.handelDeleteButton}/>
         </Route>
         <Route path="/add">
-          <NotePanel isEmpty={this.state.isEmpty} clickAdd={this.handleAddNote} changeText={this.handleChangeText} changeCategory={this.handleChangeCategory} newText={this.state.newText} newCategory={this.state.newCategory} />
+          <NotePanel errorInfo={this.state.errorInfo} isEmpty={this.state.isEmpty} clickAdd={this.handleAddNote} clickExit={this.handleExitNote} changeText={this.handleChangeText} changeCategory={this.handleChangeCategory} newText={this.state.newText} newCategory={this.state.newCategory} />
         </Route>
         </>
     );

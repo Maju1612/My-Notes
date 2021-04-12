@@ -1,6 +1,5 @@
 import React from 'react';
 import Button from './Button'
-import {Prompt} from 'react-router-dom'
 
 const NotePanel = props => {
     return (
@@ -17,19 +16,21 @@ const NotePanel = props => {
           <label htmlFor="text">Wpisz treść notatki</label>
           <textarea id="text" onChange={props.changeText} value={props.newText}></textarea>
 
-          <p className="error">Uzupełnij wszystkie pola!</p>
+          {props.errorInfo && <p className="error">Uzupełnij wszystkie pola!</p>}
 
           <div className="panel-buttons">
                  <Button
                     btnClass="save icon"
                     iClass="fas fa-save"
-                    text=" Zapisz"
-                    linkTo="/"
+                    text=" Dodaj"
                     click={props.clickAdd}
-                />
-          <Prompt
-                    when={props.isEmpty}
-                    message="Pola nie zostały uzupełnione. Czy chcesz porzucić dodawanie nowej notatki?"
+          />
+               <Button
+                    btnClass="cancel icon"
+                    iClass="far fa-window-close"
+                    text=" Wyjdź"
+                    click={props.clickExit}
+                    linkTo="/"
                 />
           </div>
         </div>

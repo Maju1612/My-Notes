@@ -37,7 +37,8 @@ body {
   color: #ddd;
 }
 
-.add {
+.add,
+.save {
   margin-right: 20px;
 }
 
@@ -55,8 +56,19 @@ body {
 .note {
   margin: 40px 20px;
   width: 240px;
-  background-color: rgb(255, 243, 0);
   border: 1px solid black;
+}
+
+.note-work {
+  background-color: rgb(60, 255, 47);
+}
+
+.note-shopping {
+  background-color: rgb(15, 236, 196);
+}
+
+.note-other {
+  background-color: rgb(255, 243, 0);
 }
 
 .note-header {
@@ -119,5 +131,4 @@ body {
 .note-panel .error {
   margin-bottom: 20px;
   color: red;
-  visibility: hidden;
 }
