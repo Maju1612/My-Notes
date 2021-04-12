@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/My-Notes/static/css/main.84b8663a.chunk.css",
-    "main.js": "/My-Notes/static/js/main.91b1a77c.chunk.js",
-    "main.js.map": "/My-Notes/static/js/main.91b1a77c.chunk.js.map",
-    "runtime-main.js": "/My-Notes/static/js/runtime-main.5976928c.js",
-    "runtime-main.js.map": "/My-Notes/static/js/runtime-main.5976928c.js.map",
-    "static/js/2.92241243.chunk.js": "/My-Notes/static/js/2.92241243.chunk.js",
-    "static/js/2.92241243.chunk.js.map": "/My-Notes/static/js/2.92241243.chunk.js.map",
-    "index.html": "/My-Notes/index.html",
-    "static/css/main.84b8663a.chunk.css.map": "/My-Notes/static/css/main.84b8663a.chunk.css.map",
-    "static/js/2.92241243.chunk.js.LICENSE.txt": "/My-Notes/static/js/2.92241243.chunk.js.LICENSE.txt"
+    "main.css": "/My-Notes-react/static/css/main.84b8663a.chunk.css",
+    "main.js": "/My-Notes-react/static/js/main.d3ac4688.chunk.js",
+    "main.js.map": "/My-Notes-react/static/js/main.d3ac4688.chunk.js.map",
+    "runtime-main.js": "/My-Notes-react/static/js/runtime-main.e763c796.js",
+    "runtime-main.js.map": "/My-Notes-react/static/js/runtime-main.e763c796.js.map",
+    "static/js/2.92241243.chunk.js": "/My-Notes-react/static/js/2.92241243.chunk.js",
+    "static/js/2.92241243.chunk.js.map": "/My-Notes-react/static/js/2.92241243.chunk.js.map",
+    "index.html": "/My-Notes-react/index.html",
+    "static/css/main.84b8663a.chunk.css.map": "/My-Notes-react/static/css/main.84b8663a.chunk.css.map",
+    "static/js/2.92241243.chunk.js.LICENSE.txt": "/My-Notes-react/static/js/2.92241243.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.5976928c.js",
+    "static/js/runtime-main.e763c796.js",
     "static/js/2.92241243.chunk.js",
     "static/css/main.84b8663a.chunk.css",
-    "static/js/main.91b1a77c.chunk.js"
+    "static/js/main.d3ac4688.chunk.js"
   ]
 }
